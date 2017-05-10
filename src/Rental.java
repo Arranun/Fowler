@@ -12,7 +12,7 @@ class Rental {
         return movie;
     }
 	double amountFor() {
-		 return movie.amountFor(daysRented);
+		 return movie.price.amountFor(movie, daysRented);
 		 }
 	int getFrequentRenterPoints() {
 		 return movie.getFrequentRenterPoints(daysRented);
