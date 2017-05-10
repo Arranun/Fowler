@@ -25,7 +25,7 @@ class Customer {
             
             Rental each = (Rental) enum_rentals.nextElement();
             
-            frequentRenterPoints = each.getFrequentRenterPoints(frequentRenterPoints);
+            frequentRenterPoints += each.getFrequentRenterPoints();
             //show figures for this rental
             result += "\t" + each.getMovie().getTitle()+ "\t" + "\t" + each.getDaysRented() + "\t" + String.valueOf(each.amountFor()) + "\n";
             totalAmount += each.amountFor();
